@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Student Form</title>
+</head>
+
+<body>
+    <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+        <strong>Success!</strong> Your form is successfully submitted...!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+        <strong>Error!</strong> Your form is not submitted due to errors...!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <h1 style="text-align: center; color: #fffad6; font-family: 'Times New Roman', Times, serifs;"><u>Student Form</u>
+    </h1>
+
+    <div class="container">
+
+        <form name="myform">
+            <div>
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" class="form-control" aria-describedby="passwordHelpBlock">
+                <div id="nameHelpBlock" class="form-text invalid-feedback">
+                    Your name must be 2-10 characters long and must not contain numbers, special characters, or
+                    emoji.
+                </div>
+                <br>
+
+                <label for="inputPassword5" class="form-label">Password</label>
+                <input type="password" id="password" class="form-control" aria-describedby="passwordHelpBlock">
+                <div id="passwordHelpBlock" class="form-text invalid-feedback">
+                    Your password must be 8-20 characters long, contain letters and numbers and @, and must not contain
+                    spaces,other special characters, or emoji.
+                </div>
+                <br>
+
+                <div class="mb-3">
+                    <label for="Address" class="form-label">Address</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Enter Your Address"></textarea>
+                </div>
+                <br>
+
+                <label for="phone" class="form-label">Phone No.</label>
+                <input type="text" id="phone" class="form-control" aria-describedby="passwordHelpBlock">
+                <div id="nameHelpBlock" class="form-text invalid-feedback">
+                    Your phone number must be 10 digit long
+                </div>
+
+                <br>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text invalid-feedback">Your email must be a valid email</div>
+                </div>
+
+                <br>
+
+                <div class="mb-3">
+                    <label for="Gender" class="form-label">Gender</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="male" id="male" value="Male">
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Female" id="female" value="Female">
+                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+                </div>
+                <br>
+
+                <div class="mb-3">
+                    <label for="Hobbies" class="form-label">Hobbies</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Learning">
+                        <label class="form-check-label" for="Learning">
+                            Learning
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Writing">
+                        <label class="form-check-label" for="Writing">
+                            Writing
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Photography">
+                        <label class="form-check-label" for="Photography">
+                            Photography
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Dance">
+                        <label class="form-check-label" for="Dance">
+                            Dance
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Cooking">
+                        <label class="form-check-label" for="Cooking">
+                            Cooking
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Painting">
+                        <label class="form-check-label" for="Painting">
+                            Painting
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Drawing">
+                        <label class="form-check-label" for="Drawing">
+                            Drawing
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Computer Programming">
+                        <label class="form-check-label" for="Computer Programming">
+                            Computer Programming
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Acting">
+                        <label class="form-check-label" for="Acting">
+                            Acting
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Singing">
+                        <label class="form-check-label" for="Singing">
+                            Singing
+                        </label>
+                    </div>
+
+                </div>
+                <br>
+
+                <div class="mb-3">
+                    <label for="Country" class="form-label">Country</label><br>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="India">India</option>
+                        <option value="US">US</option>
+                        <option value="Canada">Canada</option>
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                        <option value="France">France</option>
+                        <option value="Spain">Spain</option>
+                        <option value="UK">UK</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Russia">Russia</option>
+                    </select>
+                </div>
+                <br>
+
+                <button id="submit" type="submit" value="SUBMIT" class="btn btn-primary">SUBMIT</button>
+                <button id="reset" type="reset" value="RESET" class="btn btn-primary">RESET</button>
+
+            </div>
+        </form>
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
